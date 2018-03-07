@@ -6,6 +6,7 @@ Panels:
       Expanded:
         - /Global Options1
         - /TF1/Tree1
+        - /Pose2
       Splitter Ratio: 0.5
     Tree Height: 542
   - Class: rviz/Selection
@@ -63,7 +64,7 @@ Visualization Manager:
       Enabled: true
       Invert Rainbow: false
       Max Color: 255; 255; 255
-      Max Intensity: 730
+      Max Intensity: 714
       Min Color: 0; 0; 0
       Min Intensity: 6
       Name: LaserScan
@@ -85,11 +86,13 @@ Visualization Manager:
         All Enabled: true
         base_link:
           Value: true
+        hector_odom:
+          Value: true
+        hector_scanmatcher_frame:
+          Value: true
         horizontal_laser_link:
           Value: true
         server_map:
-          Value: true
-        sm_odom:
           Value: true
       Marker Scale: 1
       Name: TF
@@ -98,10 +101,12 @@ Visualization Manager:
       Show Names: true
       Tree:
         server_map:
-          sm_odom:
+          hector_odom:
             base_link:
               horizontal_laser_link:
                 {}
+            hector_scanmatcher_frame:
+              {}
       Update Interval: 0
       Value: true
     - Alpha: 1
@@ -179,17 +184,17 @@ Visualization Manager:
       Class: rviz/Map
       Color Scheme: map
       Draw Behind: false
-      Enabled: true
+      Enabled: false
       Name: Map
       Topic: /hector_map
       Unreliable: false
       Use Timestamp: false
-      Value: true
+      Value: false
     - Alpha: 1
       Axes Length: 1
       Axes Radius: 0.100000001
       Class: rviz/Pose
-      Color: 255; 25; 0
+      Color: 0; 0; 255
       Enabled: true
       Head Length: 0.300000012
       Head Radius: 0.100000001
@@ -225,16 +230,16 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 5.76822758
+      Distance: 9.64090157
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.0599999987
         Stereo Focal Distance: 1
         Swap Stereo Eyes: false
         Value: false
       Focal Point:
-        X: -2.25737333
-        Y: 1.86843944
-        Z: 6.62184858
+        X: -9.33718586
+        Y: -2.31774926
+        Z: 6.62229204
       Focal Shape Fixed Size: true
       Focal Shape Size: 0.0500000007
       Invert Z Axis: false
@@ -243,7 +248,7 @@ Visualization Manager:
       Pitch: 1.56979632
       Target Frame: <Fixed Frame>
       Value: Orbit (rviz)
-      Yaw: 5.2303977
+      Yaw: 5.28539801
     Saved: ~
 Window Geometry:
   Displays:
@@ -261,5 +266,5 @@ Window Geometry:
   Views:
     collapsed: false
   Width: 1536
-  X: 8
-  Y: 54
+  X: 16
+  Y: 85
