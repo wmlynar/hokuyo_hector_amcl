@@ -86,6 +86,7 @@
 
   <node pkg="amcl" type="amcl" name="amcl" >
     <remap from="scan" to="scan" />
+    <remap from="slam_out_pose" to="amcl_pose" />
 
     <param name="base_frame_id" value="base_link" />
 <!--    <param name="odom_frame_id" value="laser_scan_matcher_odom" /> -->
